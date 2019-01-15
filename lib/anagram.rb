@@ -6,7 +6,7 @@ class Anagram
     word = word.split("").sort 
     @list = list
     list = list.sort 
-    list.find_all {|word| %w(list) == word}
+    list.find_all {|i| %w(i) == word}
  end 
   
 end 
