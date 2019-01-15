@@ -1,10 +1,10 @@
 # Your code goes here!
 class Anagram
-  attr_accessor :word
+  attr_accessor :list
   
   def initialize(word, list)
-    @word = word.sort 
-    list = list.split("").sort 
+    word = word.split("").sort 
+    list = list.sort 
     word.match {|word, list| %w(word) == list}
  end 
   
