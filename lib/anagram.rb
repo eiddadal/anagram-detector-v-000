@@ -11,7 +11,7 @@ class Anagram
  def match 
    word = word.split("").sort
    @list.sort 
-    list.find_all {|i, word| %w(i) == word}
+    list.match{|i, word| %w(i) == word}
  end 
   
 end 
